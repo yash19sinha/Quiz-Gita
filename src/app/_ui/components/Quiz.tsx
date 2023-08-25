@@ -158,7 +158,7 @@ export const Quiz = () => {
     >
       <div className="flex flex-col text-black font-bold text-[32px] text-center w-full">
         <h1 className="font-bold text-base text-brand-cerulean-blue">
-          QuizApp
+          Gita Quiz
         </h1>
         <div className="mt-6 rounded-2xl border border-brand-light-gray px-7 py-4 w-full mb-1">
           <h3 className="text-black font-medium text-sm">

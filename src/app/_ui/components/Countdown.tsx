@@ -30,7 +30,7 @@ export const Countdown = ({ onGoClick }: CountdownProps) => {
       transition={{ duration: 0.5 }}
     >
       <div className="flex flex-col items-center text-white font-bold text-[32px]">
-        <h1>QuizApp</h1>
+        <h1>Gita Quiz</h1>
         <p className="mt-[116px]">Your quiz starts in</p>
         <div className="flex justify-center items-center mt-[38px] rounded-full border-8 border-white w-[196px] h-[196px] bg-transparent">
           {countdown !== 0 ? (
