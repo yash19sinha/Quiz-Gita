@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { useState } from 'react'
 import { MdLockOutline } from "react-icons/md";
 import { FaRegEnvelope } from "react-icons/fa";
-export default function admin() {
+export default function Admin() {
   type Inputs = {
     questions: string;
     option1: string;
@@ -52,21 +52,21 @@ export default function admin() {
             <h2 className="mb-1 text-2xl font-bold md:text-3xl text-darkViolet md:mb-2 ">
               Add Questions
             </h2>
-            <div className="inline-block w-12 mb-2 border-b-2 md:w-20 bg-darkViolet border-darkViolet"></div>
+            <div className="inline-block  mb-2 border-b-2 md:w-20 bg-darkViolet border-darkViolet"></div>
             <form
               className="flex flex-col items-center mb-1 md:mb-2"
               onSubmit={handleSubmit(onSubmit)}
             >
               <div>
                 <div>
-                  <div className="flex items-center w-3/5 p-1 mb-3 bg-gray-100 md:w-64 md:p-2">
+                  <div className="flex items-center w-56 p-1 mb-3 bg-gray-100 md:w-64 md:p-2">
                     <FaRegEnvelope className="m-2 text-gray-400" />
                     <input
                       type="text"
                       id="questions"
-                      {...register("questions" as const, {
-                        required: "*questions required",
-                      })}
+                      // {...register("questions" as const, {
+                      //   required: "*questions required",
+                      // })}
                       placeholder="questions"
                       className="flex-1 text-sm font-medium bg-gray-100 outline-none"
                       value={values.questions}
