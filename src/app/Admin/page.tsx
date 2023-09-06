@@ -83,9 +83,9 @@ export default function Admin() {
                     <input
                       type="text"
                       id="option1"
-                      // {...register("option1" as const, {
-                      //   required: "*option1 required"
-                      // })}
+                      {...register("option1" as const, {
+                        required: "*option1 required"
+                      })}
                       placeholder="option1"
                       className="flex-1 text-sm font-medium bg-gray-100 outline-none"
                       value={values.option1}
@@ -103,9 +103,9 @@ export default function Admin() {
                     <input
                       type="text"
                       id="option2"
-                      // {...register("option2" as const, {
-                      //   required: "*option2 required"
-                      // })}
+                      {...register("option2" as const, {
+                        required: "*option2 required"
+                      })}
                       placeholder="option2"
                       className="flex-1 text-sm font-medium bg-gray-100 outline-none"
                       value={values.option2}
@@ -122,9 +122,9 @@ export default function Admin() {
                     <input
                       type="text"
                       id="option3"
-                      // {...register("option3" as const, {
-                      //   required: "*option3 required"
-                      // })}
+                      {...register("option3" as const, {
+                        required: "*option3 required"
+                      })}
                       placeholder="option3"
                       className="flex-1 text-sm font-medium bg-gray-100 outline-none"
                       value={values.option3}
@@ -141,9 +141,9 @@ export default function Admin() {
                     <input
                       type="option4"
                       id="option4"
-                      // {...register("option4" as const, {
-                      //   required: "*option4 required"
-                      // })}
+                      {...register("option4" as const, {
+                        required: "*option4 required"
+                      })}
                       placeholder="option4"
                       className="flex-1 text-sm font-medium bg-gray-100 outline-none"
                       value={values.option4}
