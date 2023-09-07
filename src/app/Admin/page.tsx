@@ -1,7 +1,8 @@
 "use client";
 import React from 'react'
 import { useForm } from "react-hook-form";
-import { useState } from 'react'
+import { useState } from 'react' 
+import Layout from '@/app/components/Layout'
 
 export default function Admin() {
   type Inputs = {
@@ -43,12 +44,13 @@ export default function Admin() {
     console.log(data);
   };
   return (
-    <div className="flex">
-    <div className="flex items-center justify-center w-full h-screen text-center bg-orange-200">
+    <Layout>
+    <div className="flex bg-orange-200">
+    <div className="flex items-center justify-center w-full h-screen text-center ">
       <div className="   max-w-4xl bg-white shadow-2xl w-4/5 rounded-2xl">
         <div className="p-4 md:p-5 justify-center items-center">
           <div className="p-6 md:p-10">
-            <h2 className="mb-1 text-2xl font-bold md:text-3xl text-darkViolet md:mb-2 justify-center items-center">
+            <h2 className="mb-1 text-2xl font-bold md:text-3xl text-darkViolet md:mb-2 justify-center items-center text-black">
               Add Questions
             </h2>
             <div className="inline-block  mb-2 border-b-2 md:w-20 bg-darkViolet border-darkViolet"></div>
@@ -161,7 +163,7 @@ export default function Admin() {
 
               <button
                 type="submit"
-                className="inline-block px-8 py-1 font-semibold border-2 rounded-full border-darkViolet text-darkViolet md:px-12 md:py-2 hover:bg-darkViolet hover:text-white"
+                className="inline-block px-8 py-1 font-semibold border-2 rounded-full border-darkViolet text-darkViolet md:px-12 md:py-2 hover:bg-darkViolet hover:text-white bg-red-400"
               >
                 Add
               </button>
@@ -171,5 +173,7 @@ export default function Admin() {
       </div>
     </div>
     </div>
+    </Layout>
+   
   )
 }
