@@ -12,9 +12,9 @@ import {
 } from "./icons";
 
 const menuItems = [
-  { id: 1, label: "Screen 1",  link: "/" },
-  { id: 2, label: "Screen 2",  link: "/posts" },
-  { id: 3, label: "Screen 3",  link: "/users" },
+  { id: 1, label: "Screen 1",  link: "/", key: "screen1" },
+  { id: 2, label: "Screen 2",  link: "/posts",  key: "screen2"},
+  { id: 3, label: "Screen 3",  link: "/users",key: "screen3" },
 ];
 
 const Sidebar = () => {
